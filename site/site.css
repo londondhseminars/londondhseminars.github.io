@@ -2,6 +2,9 @@
 @font-face { font-family:'Space Grotesk'; font-style:normal; font-weight:500; src:url('fonts/SpaceGrotesk-Medium.ttf') format('truetype'); }
 @font-face { font-family:'Space Grotesk'; font-style:normal; font-weight:600; src:url('fonts/SpaceGrotesk-SemiBold.ttf') format('truetype'); }
 @font-face { font-family:'Space Grotesk'; font-style:normal; font-weight:700; src:url('fonts/SpaceGrotesk-Bold.ttf') format('truetype'); }
+@font-face { font-family:'Inter'; font-style:normal; font-weight:400; src:url('fonts/Inter-Regular.ttf') format('truetype'); }
+@font-face { font-family:'Inter'; font-style:normal; font-weight:500; src:url('fonts/Inter-Medium.ttf') format('truetype'); }
+@font-face { font-family:'Inter'; font-style:normal; font-weight:600; src:url('fonts/Inter-SemiBold.ttf') format('truetype'); }
 :root { --ink:#0d1b2a; --muted:#475569; --paper:#f2f4f7; --white:#fff; --red:#e32017; --orange:#f4a61e; --blue:#0077b6; --green:#2a9d8f; --purple:#6a4c93; --line:#cbd5df; --hero-bg:#e4ebf0; --section-about:#f2f4f7; --section-events:#fff; --section-contact:#e9f1f2; --max:1180px; }
 @media (prefers-color-scheme: dark) { :root { --ink:#f2f4f7; --muted:#c5d0da; --paper:#0d1b2a; --white:#101f30; --line:#3a4f63; --hero-bg:#182d3b; --section-about:#0d1b2a; --section-events:#101f30; --section-contact:#172b38; } }
 * { box-sizing:border-box; } html { overflow-x:clip; scroll-behavior:smooth; } body { margin:0; overflow-x:clip; color:var(--ink); background:var(--paper); font-family:'Inter',sans-serif; line-height:1.65; } a { color:inherit; } :focus-visible { outline:3px solid var(--orange); outline-offset:4px; }

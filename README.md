@@ -12,7 +12,7 @@ python branding/render_assets.py
 python site/generate.py
 ```
 
-The generated site is in `_site/`. Open `_site/index.html` locally or serve it with a static HTTP server. Space Grotesk is vendored in `site/assets/fonts/` and copied into the published artefact so branding typography works offline.
+The generated site is in `_site/`. Open `_site/index.html` locally or serve it with a static HTTP server. Space Grotesk and Inter are vendored in `site/assets/fonts/` and copied into the published artefact so site typography works offline.
 
 ## Content schemas
 
