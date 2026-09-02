@@ -1,0 +1,63 @@
+name: Build and publish GitHub Pages
+
+on:
+  push:
+    paths:
+      - 'site/generate.py'
+      - 'site/*.json'
+      - 'site/*.css'
+      - 'site/*.html'
+      - 'site/requirements.txt'
+      - 'site/assets/**'
+      - 'branding/**'
+      - '.github/workflows/pages.yml'
+  schedule:
+    - cron: '17 6 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Install SVG renderer
+        run: sudo apt-get update && sudo apt-get install -y fontconfig librsvg2-bin
+      - name: Install build dependencies
+        run: |
+          python -m pip install -r branding/requirements.txt
+          python -m pip install -r site/requirements.txt
+      - name: Render branding assets
+        run: python branding/render_assets.py
+      - name: Build site
+        run: python site/generate.py
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Upload Pages artefact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

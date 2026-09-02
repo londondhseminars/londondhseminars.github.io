@@ -1,0 +1,32 @@
+[
+	{
+		"title": "Computer Vision in the Digital Humanities",
+		"date": "2026-10-15",
+		"time": "18:00",
+		"description": "A seminar exploring the use of computer vision methods in Digital Humanities research.",
+		"speakers": [
+			{
+				"first_name": "Jane",
+				"surname": "Example",
+				"role": "Associate Professor",
+				"affiliation": "University College London"
+			},
+			{
+				"first_name": "John",
+				"surname": "Example",
+				"role": "Lecturer",
+				"affiliation": "King's College London"
+			}
+		],
+		"location": "Room 101, Example Building",
+		"registration_link": "https://example.org/register"
+	},
+	{
+		"title": "Methods in Motion: A Practical Conversation",
+		"date": "2026-08-12",
+		"time": "17:30",
+		"description": "An example past event showing how completed seminars appear in the archive.",
+		"location": "Online",
+		"registration_link": "https://example.org/archive"
+	}
+]

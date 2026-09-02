@@ -1,0 +1,22 @@
+[
+	{
+		"surname": "Example",
+		"first_name": "Jane",
+		"affiliation": "University College London",
+		"role": "Co-organiser",
+		"bio": "Jane Example is a researcher working on the application of computational methods to humanities research.",
+		"image_filename": "jane-example.jpg",
+		"website": "https://example.org",
+		"email": "jane.example@example.org"
+	},
+	{
+		"surname": "Example",
+		"first_name": "John",
+		"affiliation": "King's College London",
+		"role": "Co-organiser",
+		"bio": "John Example is a researcher interested in computational approaches to cultural and historical materials.",
+		"image_filename": "john-example.jpg",
+		"website": "https://example.org",
+		"email": "john.example@example.org"
+	}
+]

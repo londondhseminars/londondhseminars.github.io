@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns:ns0="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 300" role="img" aria-labelledby="title"><title id="title">London Digital Humanities Seminars transparent logo mark (dark)</title><ns0:g transform="translate(0 0) scale(1.0)">
+<ns0:path d="M 30 165 C 60 150, 80 190, 115 185 C 150 180, 165 130, 200 125 C 230 121, 250 148, 245 178 C 239 207, 268 220, 305 213 C 333 206, 330 165, 360 145 C 385 128, 410 140, 435 155 C 448 162, 458 168, 465 170" fill="none" stroke="#3A4F63" stroke-width="5.0" stroke-linecap="round" opacity="0.82" />
+<ns0:line x1="92" y1="158" x2="145" y2="88" stroke="#E32017" stroke-width="5.0" stroke-linecap="round" />
+<ns0:line x1="145" y1="88" x2="205" y2="112" stroke="#F4A61E" stroke-width="5.0" stroke-linecap="round" />
+<ns0:line x1="205" y1="112" x2="258" y2="72" stroke="#0077B6" stroke-width="5.0" stroke-linecap="round" />
+<ns0:line x1="258" y1="72" x2="330" y2="96" stroke="#2A9D8F" stroke-width="5.0" stroke-linecap="round" />
+<ns0:line x1="330" y1="96" x2="382" y2="148" stroke="#E76F9C" stroke-width="5.0" stroke-linecap="round" />
+<ns0:line x1="382" y1="148" x2="362" y2="214" stroke="#6A4C93" stroke-width="5.0" stroke-linecap="round" />
+<ns0:line x1="362" y1="214" x2="280" y2="235" stroke="#0077B6" stroke-width="5.0" stroke-linecap="round" />
+<ns0:line x1="280" y1="235" x2="215" y2="198" stroke="#2A9D8F" stroke-width="5.0" stroke-linecap="round" />
+<ns0:line x1="215" y1="198" x2="150" y2="250" stroke="#F4D35E" stroke-width="5.0" stroke-linecap="round" />
+<ns0:line x1="150" y1="250" x2="92" y2="158" stroke="#6A4C93" stroke-width="5.0" stroke-linecap="round" />
+<ns0:line x1="92" y1="158" x2="205" y2="112" stroke="#E32017" stroke-width="5.0" stroke-linecap="round" />
+<ns0:line x1="205" y1="112" x2="382" y2="148" stroke="#0077B6" stroke-width="5.0" stroke-linecap="round" />
+<ns0:line x1="330" y1="96" x2="280" y2="235" stroke="#E76F9C" stroke-width="5.0" stroke-linecap="round" />
+<ns0:line x1="145" y1="88" x2="258" y2="72" stroke="#2A9D8F" stroke-width="5.0" stroke-linecap="round" />
+<ns0:line x1="200" y1="150" x2="205" y2="112" stroke="#F4D35E" stroke-width="5.0" stroke-linecap="round" />
+<ns0:line x1="200" y1="150" x2="215" y2="198" stroke="#0077B6" stroke-width="5.0" stroke-linecap="round" />
+<ns0:circle cx="92" cy="158" r="10.0" fill="white" stroke="#101820" stroke-width="4.0" />
+<ns0:circle cx="145" cy="88" r="10.0" fill="white" stroke="#101820" stroke-width="4.0" />
+<ns0:circle cx="205" cy="112" r="10.0" fill="white" stroke="#101820" stroke-width="4.0" />
+<ns0:circle cx="258" cy="72" r="10.0" fill="white" stroke="#101820" stroke-width="4.0" />
+<ns0:circle cx="330" cy="96" r="10.0" fill="white" stroke="#101820" stroke-width="4.0" />
+<ns0:circle cx="382" cy="148" r="10.0" fill="white" stroke="#101820" stroke-width="4.0" />
+<ns0:circle cx="362" cy="214" r="10.0" fill="white" stroke="#101820" stroke-width="4.0" />
+<ns0:circle cx="280" cy="235" r="10.0" fill="white" stroke="#101820" stroke-width="4.0" />
+<ns0:circle cx="215" cy="198" r="10.0" fill="white" stroke="#101820" stroke-width="4.0" />
+<ns0:circle cx="150" cy="250" r="10.0" fill="white" stroke="#101820" stroke-width="4.0" />
+<ns0:circle cx="200" cy="150" r="10.0" fill="white" stroke="#101820" stroke-width="4.0" />
+</ns0:g>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 60" role="img" aria-label="Decorative network divider">
+  <path d="M0 30H1180" fill="none" stroke="#E32017" stroke-width="3"/>
+  <path d="M120 30H350" fill="none" stroke="#F4A61E" stroke-width="3"/>
+  <path d="M355 30H590" fill="none" stroke="#0077B6" stroke-width="3"/>
+  <path d="M595 30H830" fill="none" stroke="#2A9D8F" stroke-width="3"/>
+  <path d="M835 30H1065" fill="none" stroke="#E76F9C" stroke-width="3"/>
+  <path d="M1070 30H1180" fill="none" stroke="#6A4C93" stroke-width="3"/>
+  <g fill="white" stroke="#101820" stroke-width="3">
+    <circle cx="120" cy="30" r="8"/><circle cx="355" cy="30" r="8"/><circle cx="595" cy="30" r="8"/><circle cx="835" cy="30" r="8"/><circle cx="1070" cy="30" r="8"/>
+  </g>
+</svg>
