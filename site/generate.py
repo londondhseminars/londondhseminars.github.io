@@ -6,6 +6,7 @@ import json
 from pathlib import Path
 import re
 import shutil
+import subprocess
 import sys
 
 import markdown
@@ -125,6 +126,12 @@ def copy_assets() -> None:
     shutil.copy2(SITE_DIR / "assets" / "underground-divider.svg", assets_dir / "underground-divider.svg")
     shutil.copy2(SITE_DIR / "assets" / "nav-network.svg", assets_dir / "nav-network.svg")
     shutil.copy2(SITE_DIR / "assets" / "favicon.svg", assets_dir / "favicon.svg")
+    favicon_source = SITE_DIR / "assets" / "favicon.svg"
+    shutil.copy2(favicon_source, OUTPUT_DIR / "favicon.svg")
+    subprocess.run(
+        ["rsvg-convert", str(favicon_source), "-o", str(OUTPUT_DIR / "favicon.png"), "-w", "192", "-h", "192"],
+        check=True,
+    )
     for font in (SITE_DIR / "assets" / "fonts").glob("*.ttf"):
         shutil.copy2(font, assets_dir / "fonts" / font.name)
 
