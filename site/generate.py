@@ -56,7 +56,7 @@ def render_speakers(speakers: list[dict]) -> str:
     return f"<ul class=\"speaker-list\">{''.join(items)}</ul>" if items else ""
 
 
-def render_events(events: list[dict], empty_message: str) -> str:
+def render_events(events: list[dict], empty_message: str, show_registration: bool = True) -> str:
     if not events:
         return f'<p class="empty-state">{empty_message}</p>'
     cards = []
@@ -71,7 +71,7 @@ def render_events(events: list[dict], empty_message: str) -> str:
         detail_line = f'<p class="event-meta">{" · ".join(details)}</p>' if details else ""
         registration = (
             f'<a class="button-link" href="{escape(event["registration_link"], quote=True)}">Register <span aria-hidden="true">&rarr;</span></a>'
-            if event.get("registration_link") else ""
+            if show_registration and event.get("registration_link") else ""
         )
         cards.append(
             f'<article class="event-card"><time datetime="{escape(event["date"])}"><span>{event["date"][8:10]}</span>{escape(display_date)}</time>'
@@ -153,7 +153,7 @@ def build() -> None:
         "{{ upcoming_count }}": str(len(upcoming)),
         "{{ past_count }}": str(len(past)),
         "{{ upcoming_html }}": render_events(upcoming, "No upcoming seminars are scheduled yet."),
-        "{{ past_html }}": render_events(past, "Past seminars will be listed here."),
+        "{{ past_html }}": render_events(past, "Past seminars will be listed here.", show_registration=False),
         "{{ people_html }}": render_people(people),
     }
     for placeholder, value in replacements.items():
