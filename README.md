@@ -48,7 +48,7 @@ Each `speakers` item may contain `first_name`, `surname`, `role`, and `affiliati
 
 ### `site/people.json`
 
-An array of people. `surname`, `first_name`, `affiliation`, `role`, `bio`, `image_filename`, `website`, and `email` are optional. `image_filename` must contain only a filename; matching images belong in `site/assets/img/`.
+An array of people. `surname`, `first_name`, `affiliation`, `role`, `bio`, `image_filename`, `website`, and `email` are optional. People are displayed alphabetically by surname. `image_filename` must contain only a filename; matching images belong in `site/headshots/`.
 
 ```json
 [

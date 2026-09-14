@@ -1,13 +1,13 @@
 [
 	{
-		"surname": "Example",
-		"first_name": "Jane",
+		"surname": "Dows-Miller",
+		"first_name": "Sebastian",
 		"affiliation": "University College London",
 		"role": "Co-organiser",
-		"bio": "Jane Example is a researcher working on the application of computational methods to humanities research.",
-		"image_filename": "jane-example.jpg",
-		"website": "https://example.org",
-		"email": "jane.example@example.org"
+		"bio": "Sebastian Dows-Miller is a Research Fellow at University College London, supported by the Leverhulme Trust. In his research, he applies digital methods to the study of manuscripts written in French, asking what we can learn about medieval scribes from how they abbreviate words. He also recently published an open-access book on the œuvre of Jehan de Saint-Quentin, in which he uses statistical techniques to shed light on this case of uncertain authorship.",
+		"image_filename": "sdm.png",
+		"website": "https://dowsmiller.github.io",
+		"email": "s.dows-miller@ucl.ac.uk"
 	},
 	{
 		"surname": "Example",

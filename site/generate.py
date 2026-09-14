@@ -89,11 +89,18 @@ def render_people(people: list[dict]) -> str:
     if not people:
         return '<p class="empty-state">People and contact details will appear here soon.</p>'
     cards = []
-    for index, person in enumerate(people):
+    sorted_people = sorted(
+        people,
+        key=lambda person: (
+            str(person.get("surname", "")).casefold(),
+            str(person.get("first_name", "")).casefold(),
+        ),
+    )
+    for index, person in enumerate(sorted_people):
         name = " ".join(filter(None, [person.get("first_name"), person.get("surname")]))
         image = ""
         if person.get("image_filename"):
-            image_path = SITE_DIR / "assets" / "img" / person["image_filename"]
+            image_path = SITE_DIR / "headshots" / person["image_filename"]
             if image_path.is_file():
                 image = f'<img src="assets/img/{escape(person["image_filename"], quote=True)}" alt="Portrait of {escape(name, quote=True)}">'
         portrait = image or f'<span class="initials" aria-hidden="true">{escape(initials(person))}</span>'
@@ -117,7 +124,7 @@ def copy_assets() -> None:
     (assets_dir / "fonts").mkdir(parents=True)
     for filename in ("LDHS_logo_mark_transparent.svg", "LDHS_logo_mark_dark_transparent.svg", "LDHS_logo_mark.png", "LDHS_logo_mark_dark_square.png", "LDHS_logo_mark_square.png"):
         shutil.copy2(BRANDING_DIR / filename, assets_dir / "branding" / filename)
-    source_images = SITE_DIR / "assets" / "img"
+    source_images = SITE_DIR / "headshots"
     if source_images.is_dir():
         for image in source_images.iterdir():
             if image.is_file():
