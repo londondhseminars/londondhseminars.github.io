@@ -10,13 +10,13 @@
 		"email": "s.dows-miller@ucl.ac.uk"
 	},
 	{
-		"surname": "Example",
-		"first_name": "John",
-		"affiliation": "King's College London",
+		"surname": "Gao",
+		"first_name": "Jin",
+		"affiliation": "University College London",
 		"role": "Co-organiser",
-		"bio": "John Example is a researcher interested in computational approaches to cultural and historical materials.",
-		"image_filename": "john-example.jpg",
-		"website": "https://example.org",
-		"email": "john.example@example.org"
+		"bio": "Jin Gao a Lecturer in Digital Archives at the UCL Department of Information Studies, the Acting Programme Director for the MA/MSc in Digital Humanities programmes, Co-Director at the UCL Centre for Digital Humanities. She is also a Research Fellow at the Victoria and Albert (V&A) Museum leading on collaborative research projects, e.g., Chinese Export Watercolours (CEW), Computer and Digital Art Network (CDAN), and Stein Textiles Reconstruction and Analysis Project (STRAP) projects.",
+		"image_filename": "JinGaoPhoto.jpg",
+		"website": "https://profiles.ucl.ac.uk/53705-jin-gao",
+		"email": "jin.gao@ucl.ac.uk"
 	}
 ]
