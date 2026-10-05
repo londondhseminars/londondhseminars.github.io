@@ -18,5 +18,15 @@
 		"image_filename": "JinGaoPhoto.jpg",
 		"website": "https://profiles.ucl.ac.uk/53705-jin-gao",
 		"email": "jin.gao@ucl.ac.uk"
+	},
+	{
+		"surname": "McGillivray",
+		"first_name": "Barbara",
+		"affiliation": "King’s College London",
+		"role": "Co-organiser",
+		"bio": "Barbara McGillivray is Senior Lecturer in Digital and Computational Humanities in the Department of Digital Humanities of King’s College, where she leads the Computational Humanities research group. She is Editor-in-Chief of the Journal of Open Humanities Data and convenor of the MA programme in Digital Humanities at King’s. Her research focuses on computational methods for the study of language change in both historical languages and contemporary data.",
+		"image_filename": "058_8008.jpg",
+		"website": "https://www.kcl.ac.uk/people/barbara-mcgillivray",
+		"email": "barbara.mcgillivray@kcl.ac.uk"
 	}
 ]
