@@ -15,6 +15,7 @@ import markdown
 ROOT = Path(__file__).resolve().parent.parent
 SITE_DIR = ROOT / "site"
 BRANDING_DIR = ROOT / "branding"
+LOGOS_DIR = SITE_DIR / "logos"
 OUTPUT_DIR = ROOT / "_site"
 
 
@@ -124,6 +125,9 @@ def copy_assets() -> None:
     (assets_dir / "fonts").mkdir(parents=True)
     for filename in ("LDHS_logo_mark_transparent.svg", "LDHS_logo_mark_dark_transparent.svg", "LDHS_logo_mark.png", "LDHS_logo_mark_dark_square.png", "LDHS_logo_mark_square.png"):
         shutil.copy2(BRANDING_DIR / filename, assets_dir / "branding" / filename)
+    (assets_dir / "logos").mkdir(parents=True)
+    for filename in ("UCLDH-square.png", "CHRG-square.png", "UCLDH-wide.png", "CHRG-wide.png"):
+        shutil.copy2(LOGOS_DIR / filename, assets_dir / "logos" / filename)
     source_images = SITE_DIR / "headshots"
     if source_images.is_dir():
         for image in source_images.iterdir():

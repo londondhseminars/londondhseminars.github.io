@@ -21,8 +21,15 @@
       <source media="(prefers-color-scheme: dark)" srcset="assets/branding/LDHS_logo_mark_dark_transparent.svg">
       <img src="assets/branding/LDHS_logo_mark_transparent.svg" alt="London Digital Humanities Seminars network logo">
     </picture>
+    <div class="partner-logos">
+      <a href="https://www.ucl.ac.uk/digital-humanities/" target="_blank" rel="noopener noreferrer">
+        <img class="logo-ucldh" src="assets/logos/UCLDH-square.png" alt="UCL Centre for Digital Humanities">
+      </a>
+      <a href="https://www.kcl.ac.uk/research/computational-humanities-research-group" target="_blank" rel="noopener noreferrer">
+        <img src="assets/logos/CHRG-square.png" alt="Computational Humanities Research Group">
+      </a>
+    </div>
   </section>
-  <div class="header-sentinel" aria-hidden="true"></div>
   <header class="site-header">
     <div class="header-inner">
       <a class="brand" href="#about" aria-label="London Digital Humanities Seminars home">
@@ -74,16 +81,17 @@
   </main>
 
   <footer class="site-footer">
-    <picture><source media="(prefers-color-scheme: dark)" srcset="assets/branding/LDHS_logo_mark_dark_square.png"><img src="assets/branding/LDHS_logo_mark_square.png" alt=""></picture>
+    <a href="https://www.ucl.ac.uk/digital-humanities/"><img class="footer-logo footer-logo-ucldh" src="assets/logos/UCLDH-wide.png" alt="UCL Centre for Digital Humanities"></a>
     <p>Website designed in September 2026 by Sebastian Dows-Miller, with assistance from the GenAI tools Claude and ChatGPT.</p>
+    <a href="https://www.kcl.ac.uk/research/computational-humanities-research-group" target="_blank" rel="noopener noreferrer"><img class="footer-logo footer-logo-chrg" src="assets/logos/CHRG-wide.png" alt="Computational Humanities Research Group"></a>
   </footer>
   <script>
     const header = document.querySelector('.site-header');
-    const headerSentinel = document.querySelector('.header-sentinel');
+    const hero = document.querySelector('.hero');
     const headerObserver = new IntersectionObserver(([entry]) => {
       header.classList.toggle('is-visible', !entry.isIntersecting);
     }, { threshold: 0 });
-    headerObserver.observe(headerSentinel);
+    headerObserver.observe(hero);
     let hasStartedScrolling = false;
     window.addEventListener('scroll', () => {
       if (!hasStartedScrolling && window.scrollY > 0) {
