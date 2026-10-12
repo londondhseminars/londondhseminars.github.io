@@ -44,7 +44,13 @@ def validate_event(event: dict, index: int) -> date:
 
 
 def render_markdown(text: str) -> str:
-    return markdown.markdown(text, output_format="html5")
+    rendered = markdown.markdown(text, output_format="html5")
+
+    def add_link_attributes(match: re.Match) -> str:
+        tag = re.sub(r"\s+(?:target|rel)\s*=\s*(?:\"[^\"]*\"|'[^']*'|[^\s>]+)", "", match.group(), flags=re.IGNORECASE)
+        return f'{tag[:-1]} target="_blank" rel="noopener noreferrer">'
+
+    return re.sub(r"<a\b[^>]*>", add_link_attributes, rendered, flags=re.IGNORECASE)
 
 
 def render_speakers(speakers: list[dict]) -> str:
@@ -71,7 +77,7 @@ def render_events(events: list[dict], empty_message: str, show_registration: boo
             details.append(escape(event["location"]))
         detail_line = f'<p class="event-meta">{" · ".join(details)}</p>' if details else ""
         registration = (
-            f'<a class="button-link" href="{escape(event["registration_link"], quote=True)}">Register <span aria-hidden="true">&rarr;</span></a>'
+            f'<a class="button-link" href="{escape(event["registration_link"], quote=True)}" target="_blank" rel="noopener noreferrer">Register <span aria-hidden="true">&rarr;</span></a>'
             if show_registration and event.get("registration_link") else ""
         )
         cards.append(
@@ -107,9 +113,9 @@ def render_people(people: list[dict]) -> str:
         portrait = image or f'<span class="initials" aria-hidden="true">{escape(initials(person))}</span>'
         links = []
         if person.get("website"):
-            links.append(f'<a href="{escape(person["website"], quote=True)}">Website</a>')
+            links.append(f'<a href="{escape(person["website"], quote=True)}" target="_blank" rel="noopener noreferrer">Website</a>')
         if person.get("email"):
-            links.append(f'<a href="mailto:{escape(person["email"], quote=True)}">Email</a>')
+            links.append(f'<a href="mailto:{escape(person["email"], quote=True)}" target="_blank" rel="noopener noreferrer">Email</a>')
         cards.append(
             f'<article class="person-card accent-{index % 5}"><div class="person-image">{portrait}</div><div><h3>{escape(name)}</h3>'
             f'<p class="person-role">{escape(str(person.get("role", "")))}</p><p>{escape(str(person.get("affiliation", "")))}</p>'
