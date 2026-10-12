@@ -1,9 +1,9 @@
 [
 	{
-		"title": "Computer Vision in the Digital Humanities",
-		"date": "2026-10-15",
-		"time": "18:00",
-		"description": "A seminar exploring the use of computer vision methods in Digital Humanities research.",
+		"title": "Computer Vision",
+		"date": "2027-01-28",
+		"time": "13:00",
+		"description": "",
 		"speakers": [
 			{
 				"first_name": "Jane",
@@ -16,17 +16,71 @@
 				"surname": "Example",
 				"role": "Lecturer",
 				"affiliation": "King's College London"
+			},
+			{
+				"first_name": "Rachele",
+				"surname": "Rosina",
+				"role": "Moderator, PhD Student in Digital Humanities",
+				"affiliation": "King's College London"
 			}
 		],
-		"location": "Room 101, Example Building",
+		"location": "Online",
 		"registration_link": "https://example.org/register"
 	},
 	{
-		"title": "Methods in Motion: A Practical Conversation",
-		"date": "2026-08-12",
-		"time": "17:30",
-		"description": "An example past event showing how completed seminars appear in the archive.",
-		"location": "Online",
-		"registration_link": "https://example.org/archive"
+		"title": "Knowledge Graphs and Semantic Search",
+		"date": "2027-02-11",
+		"time": "13:00",
+		"description": "",
+		"speakers": [
+			{
+				"first_name": "Jane",
+				"surname": "Example",
+				"role": "Associate Professor",
+				"affiliation": "University College London"
+			},
+			{
+				"first_name": "John",
+				"surname": "Example",
+				"role": "Lecturer",
+				"affiliation": "King's College London"
+			},
+			{
+				"first_name": "Caitlin",
+				"surname": "Wilson",
+				"role": "Moderator, PhD Student in Digital Humanities",
+				"affiliation": "King's College London"
+			}
+		],
+		"location": "King's College London, Room TBC",
+		"registration_link": "https://example.org/register"
+	},
+	{
+		"title": "Multimodal Methods and Sources",
+		"date": "2027-02-25",
+		"time": "13:00",
+		"description": "In this session, our panelists will discuss their experiences working with multimodal data in the digital humanities. We will explore how to integrate text, images, audio, and video sources to create richer analyses and insights.",
+		"speakers": [
+			{
+				"first_name": "Adam",
+				"surname": "Gibson",
+				"role": "Professor of Medical Physics and Heritage Science",
+				"affiliation": "University College London"
+			},
+			{
+				"first_name": "Mark",
+				"surname": "Gotham",
+				"role": "Senior Lecturer in Cultural Computation",
+				"affiliation": "King's College London"
+			},
+			{
+				"first_name": "Sebastian",
+				"surname": "Dows-Miller",
+				"role": "Moderator, Research Fellow",
+				"affiliation": "University College London"
+			}
+		],
+		"location": "University College London, Room TBC",
+		"registration_link": "https://example.org/register"
 	}
 ]
