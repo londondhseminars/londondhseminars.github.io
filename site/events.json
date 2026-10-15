@@ -25,7 +25,7 @@
 			}
 		],
 		"location": "Online",
-		"registration_link": "https://example.org/register"
+		"registration_link": "https://docs.google.com/forms/d/e/1FAIpQLSeBOvR7s4__GNWPLSZvvGRCCUrNK42pkZg86gnXG5FvgnlOPg/viewform"
 	},
 	{
 		"title": "Knowledge Graphs and Semantic Search",
@@ -53,7 +53,7 @@
 			}
 		],
 		"location": "King's College London, Room TBC",
-		"registration_link": "https://example.org/register"
+		"registration_link": "https://docs.google.com/forms/d/e/1FAIpQLSeSnwPcFtiJNaIe-1DMUIkEGySVkijR7CtA37nOlUP-Bqk9vg/viewform"
 	},
 	{
 		"title": "Multimodal Methods and Sources",
@@ -81,6 +81,6 @@
 			}
 		],
 		"location": "University College London, Room TBC",
-		"registration_link": "https://example.org/register"
+		"registration_link": "https://docs.google.com/forms/d/e/1FAIpQLSf2vXVnyQp6RZAaKXFMZc_AJzponXP0WI3pctod32s1MzIybg/viewform"
 	}
 ]
