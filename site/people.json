@@ -48,5 +48,15 @@
 		"image_filename": "IMG_0076.jpeg",
 		"website": "https://profiles.ucl.ac.uk/106478-anna-zakharova",
 		"email": "anna.zakharova.20@ucl.ac.uk"
+	},
+	{
+		"surname": "Wilson",
+		"first_name": "Caitlin",
+		"affiliation": "King’s College London",
+		"role": "Co-organiser",
+		"bio": "Caitlin is a PhD candidate in Digital Humanities, holding a UKRI scholarship from the London Arts & Humanities Partnership (LAHP). She is working on a Collaborative Doctoral Award with The National Archives, working with their Find Case Law service. She holds an undergraduate degree in Linguistics from the University of Edinburgh and a MSc in Digital Scholarship from the University of Oxford. She has also trained as a Digital Archivist at the UK Parliamentary Archives.",
+		"image_filename": "IMG_0602.jpeg",
+		"website": "https://www.kcl.ac.uk/people/caitlin-wilson",
+		"email": "caitlin.e.wilson@kcl.ac.uk"
 	}
 ]
