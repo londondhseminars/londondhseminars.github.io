@@ -6,16 +6,16 @@
 		"description": "",
 		"speakers": [
 			{
-				"first_name": "Jane",
-				"surname": "Example",
-				"role": "Associate Professor",
-				"affiliation": "University College London"
+				"first_name": "Daniel",
+				"surname": "Chávez Heras",
+				"role": "Senior Lecturer in Computational Humanities and AI Media",
+				"affiliation": "King's College London"
 			},
 			{
-				"first_name": "John",
-				"surname": "Example",
-				"role": "Lecturer",
-				"affiliation": "King's College London"
+				"first_name": "Stuart",
+				"surname": "James",
+				"role": "Assistant Professor",
+				"affiliation": "Durham University"
 			},
 			{
 				"first_name": "Rachele",
@@ -34,16 +34,16 @@
 		"description": "",
 		"speakers": [
 			{
-				"first_name": "Jane",
-				"surname": "Example",
-				"role": "Associate Professor",
-				"affiliation": "University College London"
+				"first_name": "Giota",
+				"surname": "Alevizou",
+				"role": "Senior Lecturer in Digital Knowledge, Media and Culture",
+				"affiliation": "King's College London"
 			},
 			{
-				"first_name": "John",
-				"surname": "Example",
-				"role": "Lecturer",
-				"affiliation": "King's College London"
+				"first_name": "Antonios",
+				"surname": "Bikakis",
+				"role": "Professor of Artificial Intelligence",
+				"affiliation": "University College London"
 			},
 			{
 				"first_name": "Caitlin",
