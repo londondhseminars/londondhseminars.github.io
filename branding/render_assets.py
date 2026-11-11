@@ -21,8 +21,9 @@ os.environ.setdefault("FONTCONFIG_PATH", str(fontconfig_path))
 
 SQUARE_SIZE = 300
 MARK_SCALE = 0.62
+LOCKUP_Y_SHIFT = -33
 MARK_X = (SQUARE_SIZE - 500 * MARK_SCALE) / 2
-MARK_Y = (SQUARE_SIZE - 300 * MARK_SCALE) / 2
+MARK_Y = (SQUARE_SIZE - 300 * MARK_SCALE) / 2 + LOCKUP_Y_SHIFT
 
 
 def local_name(tag: str) -> str:
@@ -148,6 +149,7 @@ def outline_text(svg_path: Path) -> Path:
                     generated.append(ET.Element("path", {
                         "d": pen.getCommands(),
                         "transform": f"translate({cursor_x:g} {baseline_y:g}) scale({scale:g} {-scale:g})",
+                        "fill": inherited(run_element, "fill", "black"),
                     }))
                 cursor_x += hmtx[glyph_name][0] * scale + letter_spacing
         index = list(parent).index(text_element)
@@ -181,6 +183,11 @@ def make_square_mark(source_path: Path) -> Path:
     title = ET.SubElement(root, "title", {"id": "title"})
     dark_suffix = " (dark)" if source_path.stem.endswith("_dark") else ""
     title.text = f"London Digital Humanities Seminars square logo mark{dark_suffix}"
+    style = ET.SubElement(root, "style")
+    style.text = (
+        "@font-face{font-family:'Space Grotesk';font-weight:700;"
+        "src:url('../site/assets/fonts/SpaceGrotesk-Bold.ttf')}"
+    )
     ET.SubElement(
         root,
         "rect",
@@ -194,8 +201,23 @@ def make_square_mark(source_path: Path) -> Path:
     for child in source_group:
         artwork.append(copy.deepcopy(child))
 
+    ET.SubElement(
+        root,
+        "text",
+        {
+            "x": "60",
+            "y": str(270 + LOCKUP_Y_SHIFT),
+            "fill": "#F2F4F7" if dark_suffix else "#0D1B2A",
+            "font-family": "Space Grotesk",
+            "font-size": "40",
+            "font-weight": "700",
+            "letter-spacing": "27",
+        },
+    ).text = "LDHS"
+
     output_path = BRANDING_DIR / f"{source_path.stem}_square.svg"
     ET.ElementTree(root).write(output_path, encoding="utf-8", xml_declaration=True)
+    embed_fonts(output_path)
     return output_path
 
 
